@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link href="pageCSS/overallstyle.css" type="text/css" rel="stylesheet" />
+<link href="pageCSS/pageTeaSetDeses.css" type="text/css"
+	rel="stylesheet" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<script type="text/javascript" src="pageJS/library/jquery.js"></script>
+<script type="text/javascript" src="pageJS/library/sweet-alert.js"></script>
+<link href="pageCSS/sweet-alert.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="pageJS/funcJS/teaSetDeses.js"></script>
+<link href="pageCSS/utils.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="pageJS/funcJS/utils.js"></script>
+<title>导师毕设管理</title>
+</head>
+
+<body>
+	<div class="bar">
+		<div class="barContentBox">
+			<img class="logo" src="image/logo/logo.png" alt="" /> <a
+				href="http://www.imau.edu.cn"> <object class="logotext">
+					内蒙古农业大学<br /> imau.edu.cn
+				</object> </a>
+			<div class="listnav-warp">
+				<div class="listnav">
+					<ul>
+						<li><span>毕设管理</span>
+							<ul>
+								<li><span>毕设列表</span>
+									<ul>
+										<li><a href="teaMyDeses.html">我的毕设</a></li>
+										<li><a href="teaMain.html">所有毕设</a></li>
+									</ul>
+								</li>
+								<li><a href="teaSetDeses.html">制定毕设</a></li>
+								<li><span>学生列表</span>
+									<ul>
+										<li><a href="teaStds_my.html">我的学生</a></li>
+										<li><a href="teaStds.html">所有学生</a></li>
+									</ul>
+								</li>
+								<li><a href="teaStdDes.html">学生毕设</a></li>
+							</ul>
+						</li>
+						<li><span>毕设监控</span>
+							<ul>
+								<li><span>论文管理</span>
+									<ul>
+										<li><a href="teaFileConfig.html">论文下载</a></li>
+										<li><a href="teaFileConfig.html">论文上传</a></li>
+										<li><a href="#">论文评语</a></li>
+									</ul>
+								</li>
+								<li><a href="#">留言管理</a></li>
+								<li><a href="#">相关统计</a></li>
+								<li><a href="#">消息提醒</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="pernav-warp">
+				<ul>
+					<li id="teano">12345</li>
+					<li><img id="title_head" src="" alt="sorry" />
+						<ul>
+							<li><span id="tname">姓名</span></li>
+							<li><a href="teaPerInfo.html">个人信息</a></li>
+							<li><span onclick="changePasswd()" style="cursor: pointer;">修改密码</span>
+							</li>
+							<li><a href="teaSetting.html">相关设置</a></li>
+							<li><span onclick="exitSystem()" style="cursor: pointer;">退出</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="mainBox">
+		<div id="bodyWarp">
+			<div id="DesesWarp">
+				<span class="manage" onclick="manage();">管理</span> <span
+					class="titlesubmit" onclick="completesub();">提交</span> <span
+					class="delete" onclick="del();"><span class="deleteimg"></span><span>删除</span>
+				</span> <span class="add" onclick="add();"><span class="addimg"></span><span>添加</span>
+				</span>
+				<hr
+					style=" border: 1px solid #B1B1B1; float: left; width: 850px; margin: 0px 0 10px 25px;" />
+				<div class="DWarp">
+					<!--<div class="Des">
+					<div style="width: 40px; height: 100px; float:left;">
+						<input class="checkbox" type="checkbox" onclick="mutilDel(this)" style="display: none;"/>
+					</div>
+					<span>题目</span>
+					<input type="text" class="dtitle" disabled="disabled" />
+					<div id="do" class="do" onclick="edit(this)">编辑</div>
+					<div id="complete" class="cplEdit" onclick="completeEdit(this)">完成</div>
+					<textarea class="desc" disabled="disabled">描述......</textarea>
+					<div class="canchoiceWarp">
+						<input type="checkbox" onclick="checkCanChoice(this)" disabled="disabled" />
+						不可被选</div>
+					<div class="belongWarp"><span style="font-size: 15px; float: left;">所属：</span><span id="stdno" style="font-size: 15px; float: left;"></span></div>
+				</div>
+-->
+				</div>
+			</div>
+			<div id="infoSimpleWarp">
+				<img id="head" src="" alt="sorry" /> <span id="isw-name">XXXX</span>
+				<span id="isw-pos">XXXX</span>
+			</div>
+		</div>
+		<div class="getStdNo">
+			<div class="boxWarp">
+				<div class="boxtitle">输入学生学号</div>
+				<div class="boxbody">
+					<input id="inputSno" type="text" /> <span class="stdlist"
+						onclick="showStdNoList()">学生列表</span>
+				</div>
+				<span class="btnOK" onclick="csubmit()">确 定</span> <img
+					class="boxclose" onclick="closeChoiceStd()"
+					src="image/images/btn_close.png" width="20" height="20" />
+			</div>
+			<div class="getstdlistBox">
+				<div class="queryWarp">
+					<span class="cccc">查找</span><input class="queryin" type="text"
+						onkeyup="searchin(this)" value="请输入学号" onfocus="isfocus(this)"
+						onblur="isblur(this)" />
+				</div>
+				<div class="stdlistwarp">
+					<!-- 					<div class="stdItem" ondblclick="dbcgetSno(this);">
+						<div class="stdItemTitle">姓名</div>
+						<div class="stdItemSno">111111111</div>
+						<div class="stdItemAdd" onclick="getSno(this)">+</div>
+					</div> -->
+				</div>
+				<div class="stdlistbtnClose" onclick="hideStdNoList()">关 闭</div>
+			</div>
+		</div>
+	</div>
+	<div class="bar">
+		<div class="barContentBox">
+			<img class="logo" src="image/logo/logo.png" alt="" />
+			<div class="logotext">
+				内蒙古农业大学<br /> imau.edu.cn
+			</div>
+			<div id="info">
+				联系地址：内蒙古呼和浩特市赛罕区昭乌达路306号 邮编：010018<br /> 版权所有 © 2014-2015
+				内蒙古农业大学计算机与信息工程学院
+			</div>
+		</div>
+	</div>
+</body>
+</html>

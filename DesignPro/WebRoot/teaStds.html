@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link href="pageCSS/overallstyle.css" type="text/css" rel="stylesheet" />
+<link href="pageCSS/pageTeaStds.css" type="text/css" rel="stylesheet" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<script type="text/javascript" src="pageJS/library/jquery.js"></script>
+<script type="text/javascript" src="pageJS/library/sweet-alert.js"></script>
+<link href="pageCSS/sweet-alert.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="pageJS/funcJS/teaStds.js"></script>
+<link href="pageCSS/utils.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="pageJS/funcJS/utils.js"></script>
+<title>导师界面</title>
+</head>
+
+<body>
+	<div class="bar">
+		<div class="barContentBox">
+			<img class="logo" src="image/logo/logo.png" alt="" /> <a
+				href="http://www.imau.edu.cn"><object class="logotext">
+					内蒙古农业大学<br />imau.edu.cn
+				</object> </a>
+			<div class="listnav-warp">
+				<div class="listnav">
+					<ul>
+						<li><span>毕设管理</span>
+							<ul>
+								<li><span>毕设列表</span>
+									<ul>
+										<li><a href="teaMyDeses.html">我的毕设</a></li>
+										<li><a href="teaMain.html">所有毕设</a></li>
+									</ul>
+								</li>
+								<li><a href="teaSetDeses.html">制定毕设</a></li>
+								<li><span>学生列表</span>
+									<ul>
+										<li><a href="teaStds_my.html">我的学生</a></li>
+										<li><a href="teaStds.html">所有学生</a></li>
+									</ul>
+								</li>
+								<li><a href="teaStdDes.html">学生毕设</a></li>
+							</ul>
+						</li>
+						<li><span>毕设监控</span>
+							<ul>
+								<li><span>论文管理</span>
+									<ul>
+										<li><a href="teaFileConfig.html">论文下载</a></li>
+										<li><a href="teaFileConfig.html">论文上传</a></li>
+										<li><a href="#">论文评语</a></li>
+									</ul>
+								</li>
+								<li><a href="#">留言管理</a></li>
+								<li><a href="#">相关统计</a></li>
+								<li><a href="#">消息提醒</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="pernav-warp">
+				<ul>
+					<li id="teano">0000000000</li>
+					<li><img id="title_head" src="" alt="sorry" />
+						<ul>
+							<li><span id="tname">姓名</span></li>
+							<li><a href="teaPerInfo.html">个人信息</a></li>
+							<li><span onclick="changePasswd()" style="cursor: pointer;">修改密码</span>
+							</li>
+							<li><a href="teaSetting.html">相关设置</a></li>
+							<li><span onclick="exitSystem()" style="cursor: pointer;">退出</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="mainBox">
+		<div id="bodyWarp">
+			<div id="DlistWarp"></div>
+			<div id="infoSimpleWarp">
+				<img id="head" src="" alt="sorry" /> <span id="isw-name">XXXX</span>
+				<span id="isw-pos">XXXX</span>
+			</div>
+			<img class="loading" src="image/images/loading.gif" width="80"
+				height="40"
+				style="position: absolute; left: 400px; bottom: 0px; display: none;" />
+			<div id="btnbacktop" onclick="backtoTop()">
+				<img src="image/images/backtotop.png" width="20" height="20"
+					style="margin: 5px;" />
+			</div>
+		</div>
+	</div>
+	<div class="bar">
+		<div class="barContentBox">
+			<img class="logo" src="image/logo/logo.png" alt="" />
+			<div class="logotext">
+				内蒙古农业大学<br />imau.edu.cn
+			</div>
+			<div id="info">
+				联系地址：内蒙古呼和浩特市赛罕区昭乌达路306号 邮编：010018<br /> 版权所有 © 2014-2015
+				内蒙古农业大学计算机与信息工程学院
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

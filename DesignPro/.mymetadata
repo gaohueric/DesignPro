@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="DesignPro"
+  id="myeclipse.1420777640813"
+  context-root="/DesignProject"
+  j2ee-spec="6.0"
+  archive="DesignPro.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

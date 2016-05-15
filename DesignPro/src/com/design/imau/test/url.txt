@@ -1,0 +1,2 @@
+/*****默认头像的路径*****/
+/image/images/def_head.png

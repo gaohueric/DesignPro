@@ -1,0 +1,339 @@
+/* CSS Document */
+#bodyWarp {
+	width: 100%;
+	margin: 10px auto;
+	box-shadow: 0 1px 1px 1px #828282;
+	border-radius: 3px;
+	background-color: #FFFFFF;
+	position: relative;
+	z-index: -1;
+	float: left;
+}
+
+.pernav-warp {
+	padding: 0;
+	margin: 0 20px;
+	float: right;
+}
+
+.pernav-warp ul {
+	list-style: none;
+}
+
+.pernav-warp ul li {
+	color: #F9F9F9;
+	font-size: 15px;
+	line-height: 60px;
+	float: left;
+	position: relative;
+}
+
+.pernav-warp ul li img {
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+	border-radius: 10px;
+}
+
+.pernav-warp ul li:hover {
+	text-shadow: 0 2px 1px #000000;
+	background-color: #363D40;
+}
+
+.pernav-warp ul li:hover ul {
+	display: block;
+}
+
+.pernav-warp ul li ul {
+	display: none;
+	position: absolute;
+	top: 60px;
+	right: 0px;
+}
+
+.pernav-warp ul li ul li {
+	width: 100px;
+	text-align: center;
+	background-color: #363D40;
+	box-shadow: 0 0px 1px 0px #828282;
+}
+
+.pernav-warp ul li ul li:hover {
+	background-color: #2A2C2E;
+}
+
+.pernav-warp ul li ul li span {
+	padding: 0 20px;
+	line-height: 35px;
+	display: block;
+}
+
+.pernav-warp ul li ul li a {
+	padding: 0 20px;
+	color: #F9F9F9;
+	text-decoration: none;
+	line-height: 35px;
+	display: block;
+}
+
+.listnav-warp {
+	padding: 0;
+	margin: 0 50px;
+	float: left;
+}
+
+.listnav ul {
+	list-style: none;
+}
+
+.listnav ul li {
+	width: 160px;
+	line-height: 60px;
+	float: left;
+	position: relative;
+}
+
+.listnav ul li span {
+	display: block;
+	padding: 0 40px;
+	font-size: 20px;
+	color: #F9F9F9;
+}
+
+.listnav ul ul {
+	display: none;
+	position: absolute;
+	top: 60px;
+	left: 0px;
+}
+
+.listnav ul ul li {
+	width: 100px;
+	background-color: #363D40;
+	position: relative;
+}
+
+.listnav ul ul li span {
+	font-size: 15px;
+	padding: 0 20px;
+	line-height: 40px;
+	display: block;
+}
+
+.listnav ul ul li a {
+	color: #F9F9F9;
+	text-decoration: none;
+	font-size: 15px;
+	padding: 0 20px;
+	line-height: 40px;
+	display: block;
+}
+
+.listnav ul ul ul {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 100px;
+}
+
+.listnav ul ul ul li {
+	background-color: #2A2C2E;
+	position: relative;
+}
+
+.listnav ul ul ul a {
+	display: block;
+	color: #F1F1F1;
+	text-decoration: none;
+	font-size: 15px;
+	padding: 0 20px;
+	line-height: 40px;
+}
+
+.listnav ul ul ul ul {
+	display: none;
+}
+
+.listnav ul ul ul ul li {
+	background-color: #363D40;
+}
+
+.listnav ul li:hover {
+	background-color: #363D40;
+	text-shadow: 0 2px 1px #000000;
+	box-shadow: 0 0px 1px 0px #828282;
+}
+
+.listnav ul li:hover ul {
+	display: block;
+}
+
+.listnav ul li:hover ul li {
+	box-shadow: 0 0px 1px 0px #828282;
+}
+
+.listnav ul li:hover ul ul {
+	display: none;
+}
+
+.listnav ul ul li:hover {
+	background-color: #2A2C2E;
+}
+
+.listnav ul ul li:hover ul {
+	display: block;
+}
+
+.listnav ul ul li:hover ul ul {
+	display: none;
+}
+
+.listnav ul ul ul li:hover {
+	background-color: #363D40;
+}
+
+.listnav ul ul ul li:hover ul {
+	display: block;
+}
+
+.listnav ul ul ul ul li:hover {
+	background-color: #2A2C2E;
+}
+
+/*列表*/
+#DlistWarp {
+	width: 900px;
+	margin: 10px 5px;
+	float: left;
+}
+
+.list {
+	width: 700px;
+	height: 100px;
+	margin: 10px 100px;
+	background: #F5F5F6;
+	border-radius: 5px;
+	box-shadow: 0 1px 5px 1px #E0DEDE;
+}
+
+.list span {
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.ln-left {
+	width: 500px;
+	height: 90px;
+	margin: 5px 0 5px 5px;
+	/*background-color: #EFB08F;*/
+	float: left;
+}
+
+.ln-right {
+	width: 190px;
+	height: 90px;
+	margin: 5px 0 0 0;
+	/*background-color: #D9CB98;*/
+	float: left;
+}
+
+.tit {
+	margin: 0 0 0 15px;
+}
+
+.ll1 {
+	width: 500px;
+	height: 20px;
+	float: left;
+}
+
+.ll2 {
+	width: 500px;
+	height: 70px;
+	/*background-color: #B4B4B4;*/
+	float: left;
+}
+
+.tit-intr {
+	margin: 0 0 0 15px;
+	display: block;
+	float: left;
+}
+
+.intr {
+	width: 440px;
+	height: 62px;
+	font-size: 13px;
+	line-height: 20px;
+	float: left;
+	overflow: hidden;
+}
+
+.lr {
+	width: 155px;
+	height: 30px;
+	float: right;
+	font-size: 13px;
+	text-align: center;
+}
+
+.lr span {
+	line-height: 30px;
+}
+
+/*个人信息简要*/
+#infoSimpleWarp {
+	margin: 10px 50px 10px 10px;
+	width: 200px;
+	height: 400px;
+	float: right;
+	border: 1px solid silver;
+	box-shadow: 0 1px 1px 1px #828282;
+}
+
+#infoSimpleWarp img {
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+#isw-name {
+	width: 150px;
+	display: block;
+	margin: 30px 20px 20px 20px;
+	float: left;
+	font-size: 20px;
+}
+
+#isw-pos {
+	width: 150px;
+	display: block;
+	margin: 0px 20px 30px 20px;
+	float: left;
+	font-size: 15px;
+}
+/*返回顶部*/
+#btnbacktop {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 30px;
+	bottom: 30px;
+	color: #F1F1F1;
+	border-radius: 5px;
+	transition: background-color 0.5s ease;
+	line-height: 30px;
+	text-align: center;
+	overflow: hidden;
+	background-color: #A79571;
+	cursor: pointer;
+}
+
+#btnbacktop:hover {
+	background-color: #938667;
+	text-shadow: 0 1px 1px #292929;
+}
+
+#btnbacktop:active {
+	background-color: #675D48;
+}

@@ -1,0 +1,53 @@
+/* CSS Document */
+/*初始化*/
+*{
+	margin:0px;
+	padding:0px;
+	font-family:"微软雅黑";
+}
+body{
+	background-color:#EDEFF0;
+}
+/*确定上下标题栏的样式*/
+.bar{
+	width:100%;
+	height:60px;
+	min-width:1200px;
+	background-color:#2A2C2E;
+	float:left;}
+/*标题栏内容居中*/
+.barContentBox{
+	width:1200px;
+	height:60px;
+	margin:0 auto;}
+/*logo样式*/
+.logo{
+	margin:6px;
+	width:48px;
+	height:48px;
+	float:left;}
+/*logo文本样式*/
+.logotext{
+	height: 30px;
+	float: left;
+	color: #F1F1F1;
+	font-size:12px;
+	line-height: 15px;
+	text-align: center;
+	margin:15px 2px;
+}
+/*主内容居中*/
+#mainBox{
+	width:1200px;
+	margin:0 auto;
+}
+/*地址信息文本样式*/
+#info{
+	height: 30px;
+	float: left;
+	color: #60686B;
+	font-size:12px;
+	line-height: 15px;
+	text-align: center;
+	margin:15px 250px;
+}

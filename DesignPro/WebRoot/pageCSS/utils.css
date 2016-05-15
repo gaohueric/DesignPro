@@ -1,0 +1,337 @@
+.choiceTeaDialog {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.40);
+	background-attachment: fixed;
+	display: none;
+	z-index: 1000;
+}
+.inputTnoWarp {
+	position: absolute;
+	margin-left: -300px;
+	margin-top: -100px;
+	left: 50%;
+	top: 50%;
+	width: 600px;
+	height: 200px;
+	background: rgba(255,255,255,1.00);
+	border-radius: 10px;
+	z-index: 1100;
+}
+.ctdtitle{
+	width: 100%;
+	height: 80px;
+	line-height:80px;
+	font-size: 36px;
+	font-weight:bold;
+	font-family: "黑体";
+	text-align:center;
+	float: left;
+}
+.inwarp{
+	width: 100%;
+	height:60px;
+	float: left;
+}
+.inbox{
+	margin: 5px 10px 5px 30px;
+	width: 420px;
+	height: 50px;
+	border: 1px solid silver;
+	padding: 0 5px 0 5px;
+	font-size: 28px;
+	color: rgba(90,77,77,1.00);
+	font-family: "黑体";
+	border-radius: 5px;
+	float: left;
+}
+.inbox:focus{
+	outline: none;
+	box-shadow: 0 0 2px 2px rgba(163,163,163,0.41);
+}
+.btnconf{
+	margin-top: 5px;
+	display: block;
+	width: 100px;
+	height: 50px;
+	line-height:50px;
+	font-size: 24px;
+	font-family: "黑体";
+	text-align:center;
+	color: #F1F1F1;
+	background-color: #8186FC;
+	transition: background-color 0.2s ease;
+	border-radius: 5px;
+	cursor: pointer;
+	float: left;
+}
+.btnconf:hover{
+	background-color: #6267DB;
+	box-shadow: 0 0 2px 2px rgba(163,163,163,0.41);
+}
+
+.btnconf:active{
+	background-color: #3436A5;
+}
+.close{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 10px;
+	right: 10px;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 20px;
+	background-color: #F5171B;
+	transition: background-color 0.2s ease;
+	cursor: pointer;
+	z-index:1050;
+}
+.close:hover {
+	background-color: #E92A2D;
+	box-shadow: 0 0 2px 2px rgba(163,163,163,0.41);
+}
+.close:active {
+	background-color: #C82123;
+}
+
+/*animation*/
+ @-webkit-keyframes showDialog {
+	 0% {
+	 transform: scale(0.7);
+	 -webkit-transform: scale(0.7);
+	}
+	 45% {
+	 transform: scale(1.05);
+	 -webkit-transform: scale(1.05);
+	}
+	 80% {
+	 transform: scale(0.95);
+	 -webkit-tranform: scale(0.95);
+	}
+	 100% {
+	 transform: scale(1);
+	 -webkit-transform: scale(1);
+	}
+}
+@-moz-keyframes showDialog {
+	 0% {
+	 transform: scale(0.7);
+	 -webkit-transform: scale(0.7);
+	}
+	 45% {
+	 transform: scale(1.05);
+	 -webkit-transform: scale(1.05);
+	}
+	 80% {
+	 transform: scale(0.95);
+	 -webkit-tranform: scale(0.95);
+	}
+	 100% {
+	 transform: scale(1);
+	 -webkit-transform: scale(1);
+	}
+}
+@keyframes showDialog {
+	 0% {
+	 transform: scale(0.7);
+	 -webkit-transform: scale(0.7);
+	}
+	 45% {
+	 transform: scale(1.05);
+	 -webkit-transform: scale(1.05);
+	}
+	 80% {
+	 transform: scale(0.95);
+	 -webkit-tranform: scale(0.95);
+	}
+	 100% {
+	 transform: scale(1);
+	 -webkit-transform: scale(1);
+	}
+}
+
+@-webkit-keyframes hideSweetAlert {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1); }
+  100% {
+    transform: scale(0.1);
+    -webkit-transform: scale(0.1); } }
+@-moz-keyframes hideSweetAlert {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1); }
+  100% {
+    transform
+:
+ 
+scale
+(0
+.1
+);
+
+    
+-webkit-transform
+:
+ 
+scale
+(0
+.1
+);
+ } }
+@keyframes hideSweetAlert {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1); }
+  100% {
+    transform: scale(0.1);
+    -webkit-transform: scale(0.1); } }
+
+.show{
+	-webkit-animation: showDialog 0.3s;
+	-moz-animation: showDialog 0.3s;
+	animation: showDialog 0.3s;
+}
+
+.hide{
+	-webkit-animation: hideSweetAlert 0.3s;
+	-moz-animation: hideSweetAlert 0.3s;
+	animation: hideSweetAlert 0.3s;
+}
+/*修改密码*/
+.changePasswdWarp{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(0,0,0,0.40);
+}
+.changePasswd{
+	background-color: #FFFFFF;
+	width: 350px;
+	height: 300px;
+	border-radius: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -150px;
+	margin-left: -175px;
+}
+.cptitle{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 24px;
+	float: left;
+}
+.cptable{
+	width: 100%;
+	height: 180px;
+	float: left;
+}
+.cptable td{
+	font-size: 18px;
+	text-align: center;
+}
+.cptable td input{
+	width: 200px;
+	height: 35px;
+	border-radius: 10px;
+	border: 1px silver solid;
+	padding: 0 5px 0 5px;
+}
+.cptable td input:focus{
+	outline: none;
+	box-shadow: 0 0 2px 2px #CBCBCB;
+}
+.cpwho{
+	width:100%;
+	height: 20px;
+	float: left;
+	text-align: center;
+	color: #A08687;
+}
+.cpsubmit{
+	margin: 10px 0 0 95px;
+	width: 160px;
+	height: 30px;
+	background-color: #66C8FF;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 30px;
+	font-size: 18px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	float: left;
+}
+.cpsubmit:hover{
+	background-color: #4A43F1;
+}
+.cpsubmit:active{
+	background-color: #1C239B;
+}
+.cpClose{
+	width: 20px;
+	height: 20px;
+	right: 5px;
+	top: 5px;
+	position: absolute;
+	/*border: 1px solid silver;*/
+}
+.cpcloseimg{
+	border-radius: 3px;
+	background-color: #F5171B;
+	transition: background-color 0.2s ease;
+	cursor: pointer;
+}
+.cpcloseimg:hover {
+	background-color: #E92A2D;
+	box-shadow: 0 0 1px 1px rgba(163,163,163,0.41);
+}
+.cpcloseimg:active {
+	background-color: #C82123;
+}
+
+/*列表*/
+.tlsearch{
+	display: none;
+	top: 140px;
+	left: 100px;
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	box-shadow: 1px 0 2px 2px #C4C1C1;
+	border-radius: 0 0 2px 2px;
+	background-color: #FEFFF4;
+	max-height: 350px;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+.teawarp{
+	width: 300px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 18px;
+	float: left;
+	cursor: pointer;
+}
+.teawarp:hover{
+	background-color: #DCDFB6;
+}
+.teawarp:active{
+	background-color: #B2B875;
+}
+.teawarp .teaname{
+	width: 100px;
+	height: 30px;
+	float: left;
+}
+.teawarp .teano{
+	width: 198px;
+	height: 30px;
+	float: left;
+}

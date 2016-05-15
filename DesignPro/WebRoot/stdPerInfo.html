@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<link href="pageCSS/overallstyle.css" type="text/css" rel="stylesheet" />
+<link href="pageCSS/pagePerInfo.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="pageJS/library/jquery.js"></script>
+<script type="text/javascript" src="pageJS/funcJS/stdPer.js"></script>
+<link href="pageCSS/utils.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="pageJS/funcJS/utils.js"></script>
+<script type="text/javascript" src="pageJS/library/sweet-alert.js"></script>
+<link href="pageCSS/sweet-alert.css" type="text/css" rel="stylesheet" />
+<title>学生个人信息</title>
+</head>
+
+<body>
+	<div class="bar">
+		<div class="barContentBox">
+			<img class="logo" src="image/logo/logo.png" alt="" /> <a
+				href="http://www.imau.edu.cn"><object class="logotext">
+					内蒙古农业大学<br />imau.edu.cn
+				</object> </a>
+			<div class="listnav-warp">
+				<div class="listnav">
+					<ul>
+						<li><span>毕设管理</span>
+							<ul>
+								<li><span>指导教师</span>
+									<ul>
+										<li><a href="stdTeas.html">导师列表</a>
+											<ul>
+												<li><span onclick="showChoice()"
+													style="cursor: pointer;">选择导师</span>
+												</li>
+											</ul></li>
+										<li><a href="stdSTinfo_my.html">我的导师</a>
+										</li>
+									</ul></li>
+								<li><span>毕业设计</span>
+									<ul>
+										<li><a href="stdMain.html">毕设列表</a>
+											<ul>
+												<li><a href="#">确定毕设</a>
+												</li>
+											</ul></li>
+										<li><a href="stdMyDes.html">我的毕设</a>
+										</li>
+									</ul></li>
+							</ul></li>
+						<li><span>毕设监控</span>
+							<ul>
+								<li><span>论文管理</span>
+									<ul>
+										<li><a href="stdFileConfig.html">提交论文</a>
+										</li>
+										<li><a href="stdFileConfig.html">下载论文</a>
+										</li>
+										<li><a href="#">查看评语</a>
+										</li>
+									</ul></li>
+								<li><a href="#">留言导师</a>
+								</li>
+								<li><a href="#">相关统计</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="pernav-warp">
+				<ul>
+					<li id="stdno">2011124064</li>
+					<li><img id="titleimg" src="" alt="sorry" />
+						<ul>
+							<li><span id="sname">姓名</span>
+							</li>
+							<li><a href="stdPerInfo.html">个人信息</a>
+							</li>
+							<li><span onclick="changePasswd()" style="cursor: pointer;">修改密码</span>
+							</li>
+							<li><span onclick="exitSystem()" style="cursor: pointer">退出</span>
+							</li>
+						</ul></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="mainBox">
+		<div id="bodyWarp">
+			<div id="pTitle">个人信息</div>
+			<div class="tableWarp">
+				<form>
+					<table>
+						<tr>
+							<td><div align="right">账号：</div>
+							</td>
+							<td><input id="sid" class="inputType" type="text"
+								disabled="disabled" />
+							</td>
+						</tr>
+						<tr>
+							<td><div align="right">姓名：</div>
+							</td>
+							<td><input id="name" class="inputType" type="text" />
+							</td>
+						</tr>
+						<tr>
+							<td><div align="right">性别：</div>
+							</td>
+							<td><select id="sex" class="inputType">
+									<option value="male">男</option>
+									<option value="female">女</option>
+							</select></td>
+						</tr>
+						<tr>
+							<td><div align="right">专业：</div>
+							</td>
+							<td><select id="major" class="inputType">
+									<option value="ie">网络工程</option>
+									<option value="se">软件工程</option>
+									<option value="cst">计算机科学与技术</option>
+									<option value="imis">信息管理与信息系统</option>
+							</select></td>
+						</tr>
+						<tr>
+							<td><div align="right">年级：</div>
+							</td>
+							<td><input id="grade" class="inputType" type="text" />
+							</td>
+						</tr>
+						<tr>
+							<td><div align="right">班级：</div>
+							</td>
+							<td><input id="sclass" class="inputType" type="text" />
+							</td>
+						</tr>
+						<tr>
+							<td><div align="right">联系方式：</div>
+							</td>
+							<td><input id="phone" class="inputType" type="text" />
+							</td>
+						</tr>
+						<tr>
+							<td><div align="right">QQ：</div>
+							</td>
+							<td><input id="QQ" class="inputType" type="text" />
+							</td>
+						</tr>
+						<tr>
+							<td><div align="right">自我介绍：</div>
+							</td>
+							<td colspan="2"><textarea id="self" class="inputTypeA"></textarea>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<div class="imgWarp">
+				<img id="imgHead" src="" alt="sorry" />
+
+				<form action="servlet/HeadUpload?who=1" method="post"
+					enctype="multipart/form-data">
+					<div id="imgupload">
+						<span>预览头像</span> <input id="imgfile" name="file1" type="file" />
+					</div>
+					<input id="btn_upload" type="submit" value="上传" />
+				</form>
+			</div>
+			<div class="btnWarp">
+				<span onclick="subInfo()">修改</span> <span onclick="backmain()">取消</span>
+			</div>
+		</div>
+	</div>
+	<div class="bar">
+		<div class="barContentBox">
+			<img class="logo" src="image/logo/logo.png" alt="" />
+			<div class="logotext">
+				内蒙古农业大学<br />imau.edu.cn
+			</div>
+			<div id="info">
+				联系地址：内蒙古呼和浩特市赛罕区昭乌达路306号 邮编：010018<br /> 版权所有 © 2014-2015
+				内蒙古农业大学计算机与信息工程学院
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

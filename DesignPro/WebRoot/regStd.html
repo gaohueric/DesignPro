@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<link href="pageCSS/overallstyle.css" type="text/css" rel="stylesheet"/>
+	<link href="pageCSS/pageRegStd.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="pageJS/library/jquery.js"></script>
+	<script type="text/javascript" src="pageJS/library/sweet-alert.js"></script>
+	<script type="text/javascript" src="pageJS/funcJS/registFunc.js"></script>
+	<link href="pageCSS/sweet-alert.css" type="text/css" rel="stylesheet" />
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<title>学生注册</title>
+</head>
+
+<body>
+	<div class="bar">
+		<div class="barContentBox">
+			<img class="logo" src="image/logo/logo.png" alt=""/>
+			<a href="http://www.imau.edu.cn"><object class="logotext">内蒙古农业大学<br/>imau.edu.cn</object></a>
+		</div>
+	</div>
+	<div id="mainBox">
+		<div id="bodyBox">
+			<div id="formBox">
+				<div style="float: left; line-height:60px; color:#363739; font-size:25px; font-weight:bold;">学生基本信息注册</div>
+				<div style="float:left; width:100%">
+					<form>
+					  <table id="tableStyle">
+						  <tr>
+							<td width="20%" height="60" align="right">账号：</td>
+							<td width="33%" align="left">
+							<input id="acc" name="account" type="text" class="inputText" onblur="blurAcc(this)"/></td>
+							<td width="45%" class="note">*请输入学号(如11101XXX)</td>
+							<td width="5%" height="60" class="rwimg">
+								<img id="accimg" src="image/images/right.png" alt="sry" style="display: none;"/></td>
+						  </tr>
+							<tr>
+								<td height="60" align="right">密码：</td>
+								<td align="left">
+								<input id="pass" name="passwd" type="password" class="inputText" onkeyup="inPass(this)"/></td>
+								<td width="42%" class="note">*</td>
+								<td width="5%" height="60" class="rwimg">
+								<img id="passimg" src="image/images/right.png" alt="sry" style="display: none;"/></td>
+							</tr>
+							<tr>
+								<td height="60" align="right">确认密码：</td>
+								<td align="left">
+								<input id="re_pass" name="re_passwd" type="password" class="inputText" onkeyup="checkPass(this)"/></td>
+								<td width="42%" class="note">*</td>
+								<td width="5%" height="60" class="rwimg">
+								<img id="re_passimg" src="image/images/right.png" alt="sry" style="display: none;"/></td>
+							</tr>
+							<tr>
+								<td height="60" align="right">姓名：</td>
+								<td align="left">
+								<input id="name" name="name" type="text" class="inputText" onblur="inName(this)"/></td>
+								<td width="42%" class="note">*请输入真实姓名</td>
+								<td width="5%" height="60" class="rwimg">
+								<img id="nameimg" src="image/images/right.png" alt="sry" style="display: none;"/></td>
+							</tr>
+							<tr>
+								<td height="60" align="right">性别：</td>
+								<td align="left">
+									<select name="sex" class="inputText">
+										<option value="male">男</option>
+									  	<option value="female">女</option>
+									</select>
+								</td>
+								<td width="47%" class="note">*</td>
+							</tr>
+							<tr>
+							  <td height="60" align="right">专业：</td>
+							  <td align="left">
+								<select name="major" class="inputText">
+								  <option value="ie">网络工程</option>
+								  <option value="se">软件工程</option>
+								  <option value="cst">计算机科学与技术</option>
+								  <option value="imis">信息管理与信息系统</option>
+								</select>
+							  </td>
+							  <td width="47%" class="note">*</td>
+							</tr>
+							<tr>
+								<td height="60" align="right">年级：</td>
+								<td align="left">
+								<input id="grade" name="grade" type="text" class="inputText"/></td>
+								<td width="42%" class="note">*请输入年级（如：2011）</td>
+								<td width="5%" height="60" class="rwimg">
+								<img id="gradeimg" src="image/images/right.png" alt="sry" style="display: none;"/></td>
+							</tr>
+							<tr>
+								<td height="60" align="right">班级：</td>
+								<td align="left">
+								<input id="class" name="sclass" type="text" class="inputText"/></td>
+								<td width="42%" class="note">*</td>
+								<td width="5%" height="60" class="rwimg">
+								<img id="classimg" src="image/images/right.png" alt="sry" style="display: none;"/></td>
+							</tr>
+							<tr>
+								<td height="60" align="right">联系方式：</td>
+								<td align="left">
+								<input id="phone" name="phone" type="text" class="inputText" onblur="inPhone(this)"/></td>
+								<td width="42%" class="note">*</td>
+								<td width="5%" height="60" class="rwimg">
+								<img id="phoneimg" src="image/images/right.png" alt="sry" style="display: none;"/></td>
+							</tr>
+							<tr>
+								<td><br/></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<div class="btnBox">
+										<input class="btn" type="button" value="提交" onclick="s_submit()" />
+										<input class="btn" type="reset" value="重置"/>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bar">
+		<div class="barContentBox">
+			<img class="logo" src="image/logo/logo.png" alt=""/>
+			<div class="logotext">内蒙古农业大学<br/>imau.edu.cn</div>
+			<div id="info">联系地址：内蒙古呼和浩特市赛罕区昭乌达路306号 邮编：010018<br/>
+			版权所有 © 2014-2015 内蒙古农业大学计算机与信息工程学院</div>
+		</div>
+	</div>
+</body>
+
+</html>

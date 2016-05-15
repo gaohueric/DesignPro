@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link href="pageCSS/overallstyle.css" type="text/css" rel="stylesheet" />
+<link href="pageCSS/pageTeaFile.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="pageJS/library/jquery.js"></script>
+<script type="text/javascript" src="pageJS/funcJS/teaFileConfig.js"></script>
+<link href="pageCSS/utils.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="pageJS/funcJS/utils.js"></script>
+<script type="text/javascript">
+	
+</script>
+<title>导师主界面</title>
+</head>
+<body>
+	<div class="bar">
+		<div class="barContentBox">
+			<img class="logo" src="image/logo/logo.png" alt="" /> <a
+				href="http://www.imau.edu.cn"><object class="logotext">
+					内蒙古农业大学<br />imau.edu.cn
+				</object> </a>
+			<div class="listnav-warp">
+				<div class="listnav">
+					<ul>
+						<li><span>毕设管理</span>
+							<ul>
+								<li><span>毕设列表</span>
+									<ul>
+										<li><a href="teaMyDeses.html">我的毕设</a></li>
+										<li><a href="teaMain.html">所有毕设</a></li>
+									</ul>
+								</li>
+								<li><a href="teaSetDeses.html">制定毕设</a></li>
+								<li><span>学生列表</span>
+									<ul>
+										<li><a href="teaStds_my.html">我的学生</a></li>
+										<li><a href="teaStds.html">所有学生</a></li>
+									</ul>
+								</li>
+								<li><a href="teaStdDes.html">学生毕设</a></li>
+							</ul>
+						</li>
+						<li><span>毕设监控</span>
+							<ul>
+								<li><span>论文管理</span>
+									<ul>
+										<li><a href="teaFileConfig.html">论文下载</a></li>
+										<li><a href="teaFileConfig.html">论文上传</a></li>
+										<li><a href="#">论文评语</a></li>
+									</ul>
+								</li>
+								<li><a href="#">留言管理</a></li>
+								<li><a href="#">相关统计</a></li>
+								<li><a href="#">消息提醒</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="pernav-warp">
+				<ul>
+					<li id="teano">0000000000</li>
+					<li><img id="title_head" src="" alt="sorry" />
+						<ul>
+							<li><span id="tname">姓名</span></li>
+							<li><a href="teaPerInfo.html">个人信息</a></li>
+							<li><span onclick="changePasswd()" style="cursor: pointer;">修改密码</span>
+							</li>
+							<li><a href="teaSetting.html">相关设置</a></li>
+							<li><span onclick="exitSystem()" style="cursor: pointer;">退出</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="mainBox">
+		<div id="bodyWarp">
+			<div id="winBox">
+				<ul>
+					<li id="desNavi" onclick="desNavi();">毕业设计</li>
+					<li id="dataNavi" onclick="dataNavi();">相关资料</li>
+				</ul>
+				<div class="thesisWarp">
+					<div>
+						<span
+							style="margin: 20px 0 10px 300px; font-size: 25px; float: left;">学生论文</span>
+						<table id="destable" class="file-table" border="0" cellspacing="0"
+							cellpadding="0" style="float: left;">
+							<tr>
+								<td width="80" style="text-align:center; font-weight:bold;">姓名</td>
+								<td width="320" style="text-align:center; font-weight:bold;">文件名</td>
+								<td width="100" style="text-align:center; font-weight:bold;">更新日期</td>
+								<td style="text-align:center; font-weight:bold;">操作</td>
+							</tr>
+						</table>
+						<div></div>
+					</div>
+					<div>
+						<span
+							style="margin: 20px 0 10px 300px; font-size: 25px; float: left; display:block;">提交论文</span>
+						<div>
+							<form id="form1" method="post" enctype="multipart/form-data"
+								style="float: left; margin-left: 50px; width: 500px; padding-bottom:10px;">
+								<div class="files fwdwarp"></div>
+								<input type="button" value="提交" class="btn_submit"
+									onclick="subDesFile()" />
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="materialwarp">
+					<div>
+						<span
+							style="margin: 20px 0 10px 300px; font-size: 25px; float: left;">资料下载</span>
+						<table id="datatable" class="file-table" border="0"
+							cellspacing="0" cellpadding="0" style="float: left;">
+							<tr>
+								<td width="500" style="text-align:center; font-weight:bold;">文件名</td>
+								<td style="text-align:center; font-weight:bold;">操作</td>
+							</tr>
+						</table>
+						<div></div>
+					</div>
+					<div>
+						<span
+							style="margin: 20px 0 10px 300px; font-size: 25px; float: left;">上传资料</span>
+						<div>
+							<form id="form2" method="post" enctype="multipart/form-data"
+								style="float: left; margin-left: 100px; width: 500px; padding-bottom:10px;">
+								<div class="files fwwarp">
+									<div class="file-warp fw">
+										<div class="filename"></div>
+										<div class="addFile">添&nbsp;加</div>
+										<input name="files" type="file" class="file"
+											onchange="showfilename(this)" />
+										<div class="filemore" onclick="moreInput()">+</div>
+										<div class="filenomore" onclick="removeSelf(this)">-</div>
+									</div>
+								</div>
+								<input type="button" value="提交" class="btn_submit"
+									onclick="subDataFile()" />
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="infoSimpleWarp">
+				<img id="head" src="" alt="sorry" /> <span id="isw-name">XXXX</span>
+				<span id="isw-pos">XXXX</span>
+			</div>
+		</div>
+	</div>
+	<div class="bar">
+		<div class="barContentBox">
+			<img class="logo" src="image/logo/logo.png" alt="" />
+			<div class="logotext">
+				内蒙古农业大学<br />imau.edu.cn
+			</div>
+			<div id="info">
+				联系地址：内蒙古呼和浩特市赛罕区昭乌达路306号 邮编：010018<br /> 版权所有 © 2014-2015
+				内蒙古农业大学计算机与信息工程学院
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

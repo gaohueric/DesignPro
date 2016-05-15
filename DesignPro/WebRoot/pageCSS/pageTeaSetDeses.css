@@ -1,0 +1,762 @@
+/* CSS Document */
+#bodyWarp {
+	width: 100%;
+	margin: 10px auto;
+	box-shadow: 0 1px 1px 1px #828282;
+	border-radius: 3px;
+	background-color: #FFFFFF;
+	float: left;
+}
+.pernav-warp {
+	padding: 0;
+	margin: 0 20px;
+	float: right;
+}
+.pernav-warp ul {
+	list-style: none;
+}
+.pernav-warp ul li {
+	color: #F9F9F9;
+	font-size: 15px;
+	line-height: 60px;
+	float: left;
+	position: relative;
+}
+.pernav-warp ul li img {
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+	border-radius: 10px;
+}
+.pernav-warp ul li:hover {
+	text-shadow: 0 2px 1px #000000;
+	background-color: #363D40;
+}
+.pernav-warp ul li:hover ul {
+	display: block;
+}
+.pernav-warp ul li ul {
+	display: none;
+	position: absolute;
+	top: 60px;
+	right: 0px;
+}
+.pernav-warp ul li ul li {
+	width: 100px;
+	text-align: center;
+	background-color: #363D40;
+	box-shadow: 0 0px 1px 0px #828282;
+}
+.pernav-warp ul li ul li:hover {
+	background-color: #2A2C2E;
+}
+.pernav-warp ul li ul li span {
+	padding: 0 20px;
+	line-height: 35px;
+	display: block;
+}
+.pernav-warp ul li ul li a {
+	padding: 0 20px;
+	color: #F9F9F9;
+	text-decoration: none;
+	line-height: 35px;
+	display: block;
+}
+.listnav-warp {
+	padding: 0;
+	margin: 0 50px;
+	float: left;
+}
+.listnav ul {
+	list-style: none;
+}
+.listnav ul li {
+	width: 160px;
+	line-height: 60px;
+	float: left;
+	position: relative;
+}
+.listnav ul li span {
+	display: block;
+	padding: 0 40px;
+	font-size: 20px;
+	color: #F9F9F9;
+}
+.listnav ul ul {
+	display: none;
+	position: absolute;
+	top: 60px;
+	left: 0px;
+}
+.listnav ul ul li {
+	width: 100px;
+	background-color: #363D40;
+	position: relative;
+}
+.listnav ul ul li span {
+	font-size: 15px;
+	padding: 0 20px;
+	line-height: 40px;
+	display: block;
+}
+.listnav ul ul li a {
+	color: #F9F9F9;
+	text-decoration: none;
+	font-size: 15px;
+	padding: 0 20px;
+	line-height: 40px;
+	display: block;
+}
+.listnav ul ul ul {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 100px;
+}
+.listnav ul ul ul li {
+	background-color: #2A2C2E;
+	position: relative;
+}
+.listnav ul ul ul a {
+	display: block;
+	color: #F1F1F1;
+	text-decoration: none;
+	font-size: 15px;
+	padding: 0 20px;
+	line-height: 40px;
+}
+.listnav ul ul ul ul {
+	display: none;
+}
+.listnav ul ul ul ul li {
+	background-color: #363D40;
+}
+.listnav ul li:hover {
+	background-color: #363D40;
+	text-shadow: 0 2px 1px #000000;
+	box-shadow: 0 0px 1px 0px #828282;
+}
+.listnav ul li:hover ul {
+	display: block;
+}
+.listnav ul li:hover ul li {
+	box-shadow: 0 0px 1px 0px #828282;
+}
+.listnav ul li:hover ul ul {
+	display: none;
+}
+.listnav ul ul li:hover {
+	background-color: #2A2C2E;
+}
+.listnav ul ul li:hover ul {
+	display: block;
+}
+.listnav ul ul li:hover ul ul {
+	display: none;
+}
+.listnav ul ul ul li:hover {
+	background-color: #363D40;
+}
+.listnav ul ul ul li:hover ul {
+	display: block;
+}
+.listnav ul ul ul ul li:hover {
+	background-color: #2A2C2E;
+}
+/*列表*/
+#DesesWarp {
+	width: 900px;
+	min-height: 600px;
+	margin: 10px 5px;
+	/*border: 1px solid silver;*/
+	float: left;
+}
+.manage {
+	font-size: 18px;
+	color: #FCFCFC;
+	margin: 20px 40px 5px 5px;
+	padding: 3px 15px 3px 15px;
+	border-radius: 3px;
+	background: #929292;
+	transition: background-color 0.3s ease, border-radius 0.3s ease;
+	cursor: pointer;
+	float: right;
+}
+.manage:hover {
+	border-radius: 5px;
+	background: #6C6C6C;
+}
+.manage:active {
+	background: #4A4A4A;
+}
+.titlesubmit {
+	display: none;
+	font-size: 18px;
+	color: #FCFCFC;
+	margin: 20px 5px 5px 5px;
+	padding: 3px 15px 3px 15px;
+	border-radius: 3px;
+	background: #929292;
+	transition: background-color 0.3s ease, border-radius 0.3s ease;
+	cursor: pointer;
+	float: right;
+}
+.titlesubmit:hover {
+	border-radius: 5px;
+	background: #6C6C6C;
+}
+.titlesubmit:active {
+	background: #4A4A4A;
+}
+.delete {
+	display: none;
+	margin: 30px 5px 5px 5px;
+	padding: 0 3px 0 3px;
+	background-color: #BCCFFB;
+	cursor: pointer;
+	border-radius: 2px;
+	color: rgba(243,243,243,1.00);
+	transition: background-color 0.3s ease, border-radius 0.3s ease, color 0.3s ease, display 0.3s ease;
+	float: right;
+}
+.delete:hover {
+	border-radius: 5px;
+	color: #FFFFFF;
+	background-color: #9EBBFC;
+}
+.delete:active {
+	background-color: #7C68F9;
+}
+.delete:hover .deleteimg {
+	transition: background 0.5s ease;
+	background: url(../image/images/deleteOpen.png) no-repeat;
+	background-size: 13px 17px;
+}
+.deleteimg {
+	width: 15px;
+	height: 20px;
+	display: block;
+	background: url(../image/images/deleteClose.png) no-repeat;
+	background-size: 13px 17px;
+	float: left;
+}
+.delete span {
+	font-size: 15px;
+	height: 20px;
+	float: left;
+}
+.add {
+	display: none;
+	margin: 30px 5px 5px 5px;
+	padding: 0 3px 0 3px;
+	background-color: #BCCFFB;
+	cursor: pointer;
+	border-radius: 2px;
+	color: rgba(243,243,243,1.00);
+	transition: background-color 0.3s ease, border-radius 0.3s ease, color 0.3s ease;
+	float: right;
+}
+.add:hover {
+	border-radius: 5px;
+	color: #FFFFFF;
+	background-color: #9EBBFC;
+}
+.add:active {
+	background-color: #7C68F9;
+}
+.add:hover .addimg {
+	transition: background 0.5s ease;
+	background: url(../image/images/addin.png) no-repeat center;
+	background-size: 10px 15px;
+}
+.addimg {
+	width: 15px;
+	height: 20px;
+	display: block;
+	background: url(../image/images/addnormal.png) no-repeat center;
+	background-size: 10px 15px;
+	float: left;
+}
+.add span {
+	font-size: 15px;
+	height: 20px;
+	float: left;
+}
+.DWarp {
+	margin-left: 25px;
+	margin-bottom: 10px;
+	float: left;
+	/*border: 1px solid silver;*/
+}
+.Des {
+	width: 750px;
+	margin-left: 50px;
+	float: left;
+	/*border: 1px solid silver;*/
+}
+.Des span {
+	margin: 5px 5px 5px 5px;
+	font-size: 20px;
+	float: left;
+}
+.checkbox {
+	margin: 10px;
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+.dtitle {
+	background-color: #FFFFFF;
+	width: 200px;
+	margin-top: 5px;
+	height: 25px;
+	padding: 0 5px 0 5px;
+	font-size: 15px;
+	line-height: 25px;
+	word-break: break-all;
+	float: left;
+	transition: width 0.5s ease, box-shadow 0.3s ease;
+	border: none;
+	border-radius: 5px;
+}
+.dtitle:focus {
+	outline: none;
+	box-shadow: 0 0 1px 1px #C0C0C0;
+	width: 500px;
+}
+.dtitle:blur {
+ width: 200px;
+}
+.do {
+	display: none;
+	margin: 10px 5px 5px 5px;
+	padding: 0 5px 0 5px;
+	background-color: rgba(146,177,146,1.00);
+	transition: background-color 0.3s ease, border-radius 0.3s ease;
+	border-radius: 3px;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-size: 15px;
+	float: right;
+}
+.do:hover {
+	background-color: rgba(146,155,146,1.00);
+	border-radius: 5px;
+}
+.do:active {
+	background-color: rgba(146,100,146,1.00);
+}
+.cplEdit {
+	display: none;
+	margin: 10px 5px 5px 5px;
+	padding: 0 5px 0 5px;
+	background-color: rgba(146,177,146,1.00);
+	transition: background-color 0.3s ease, border-radius 0.3s ease;
+	border-radius: 3px;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-size: 15px;
+	float: right;
+}
+.cplEdit:hover {
+	background-color: rgba(146,155,146,1.00);
+	border-radius: 5px;
+}
+.cplEdit:active {
+	background-color: rgba(146,100,146,1.00);
+}
+.desc {
+	width: 660px;
+	max-width: 660px;
+	height: 60px;
+	background-color: #FFFFFF;
+	max-height: 60px;
+	padding: 5px;
+	border: none;
+	border-radius: 5px;
+	float: left;
+}
+.desc:focus {
+	outline: none;
+	box-shadow: 0 0 1px 1px #C0C0C0;
+	transition: box-shadow 0.3s ease;
+}
+.canchoiceWarp {
+	font-size: 15px;
+	line-height: 20px;
+	margin: 10px 0px 5px 50px;
+	width: 100px;
+	float: left;
+}
+.canchoiceWarp input {
+	margin-right: 5px;
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+.belongWarp {
+	margin: 5px 50px 5px 5px;
+	min-width: 100px;
+	border-radius: 5px;
+	float: right;
+}
+.belongNew {
+	color: #FFFFFF;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+	background-color: rgba(146,177,146,1.00);
+}
+.belongNew:hover {
+	background-color: rgba(146,155,146,1.00);
+}
+.belongNew:active {
+	background-color: rgba(146,100,146,1.00);
+}
+/*个人信息简要*/
+#infoSimpleWarp {
+	margin: 10px 50px 10px 10px;
+	width: 200px;
+	height: 400px;
+	float: right;
+	border: 1px solid silver;
+	box-shadow: 0 1px 1px 1px #828282;
+}
+#infoSimpleWarp img {
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+#isw-name {
+	width: 150px;
+	display: block;
+	margin: 30px 20px 20px 20px;
+	float: left;
+	font-size: 20px;
+}
+#isw-pos {
+	width: 150px;
+	display: block;
+	margin: 0px 20px 30px 20px;
+	float: left;
+	font-size: 15px;
+}
+/*获得学生账号*/
+.getStdNo {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: none;
+	background-color: rgba(0,0,0,0.50);
+}
+.boxWarp {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -70px;
+	margin-left: -250px;
+	width: 500px;
+	height: 140px;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+}
+.boxtitle {
+	width: 400px;
+	height: 40px;
+	margin-left: 50px;
+	font-size: 25px;
+	text-align: center;
+	line-height: 40px;
+	float: left;
+}
+.boxbody {
+	width: 500px;
+	height: 50px;
+	/*border: 1px solid silver;*/
+	font-size: 22px;
+	float: left;
+}
+.boxbody input {
+	padding: 0 10px 0 10px;
+	font-size: 20px;
+	color: #464545;
+	margin-top: 5px;
+	margin-left: 40px;
+	width: 300px;
+	height: 40px;
+	border-radius: 8px 0 0 8px;
+	;
+	border: 1px solid silver;
+	float: left;
+}
+.boxbody input:focus {
+	outline: none;
+	box-shadow: 0 0 1px 1px #C0C0C0;
+}
+.boxbody input:focus~.stdlist {
+	box-shadow: 0 0 1px 1px #C0C0C0;
+}
+.stdlist {
+	margin-top: 5px;
+	background-color: #AD9BF7;
+	transition: background-color 0.3s ease;
+	border: 1px solid #AD9BF7;
+	width: 100px;
+	height: 40px;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 0 8px 8px 0;
+	float: left;
+	cursor: pointer;
+}
+.stdlist:hover {
+	background-color: #6B77FF;
+}
+.stdlist:active {
+	background-color: #3A2BFD;
+}
+.btnOK {
+	margin: 5px 0 0 150px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 30px;
+	width: 200px;
+	height: 30px;
+	color: #FFFFFF;
+	background-color: #AD9BF7;
+	transition: background-color 0.3s ease;
+	border: 1px solid #AD9BF7;
+	border-radius: 8px;
+	cursor: pointer;
+	float: left;
+}
+.btnOK:hover {
+	background-color: #6B77FF;
+}
+.btnOK:active {
+	background-color: #3A2BFD;
+}
+.boxclose {
+	top: 5px;
+	right: 10px;
+	position: absolute;
+	border-radius: 3px;
+	background-color: #FF0004;
+	transition: background-color 0.3s ease;
+	cursor: pointer;
+}
+.boxclose:hover {
+	background-color: #DF1417;
+}
+.boxclose:active {
+	background-color: #AD3335;
+}
+.getstdlistBox {
+	display: none;
+	width: 300px;
+	height: 500px;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: 255px;
+	position: absolute;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+}
+/*查询框*/
+.queryWarp {
+	border: 1px solid silver;
+	width: 280px;
+	height: 30px;
+	margin: 10px 10px 0 10px;
+}
+.cccc {
+	display: block;
+	text-align: center;
+	width: 60px;
+	line-height: 30px;
+	height: 30px;
+	background-color: #7E7863;
+	color: #FFFFFF;
+	border-right: 1px solid silver;
+	float: left;
+}
+.queryin{
+	margin: 2px 5px 1px 10px;
+	border: none;
+	font-size: 18px;
+	color: #4D4D4D;
+	width: 200px;
+	height: 25px;
+}
+.queryin:focus{
+	outline: none;
+}
+.stdlistwarp{
+	margin-left: 10px;
+	width: 280px;
+	height: 400px;
+	border-left: 1px solid silver;
+	border-right: 1px solid silver;
+	float: left;
+	overflow: scroll;
+	overflow-x: hidden;
+	cursor: pointer;
+}
+.stdItem{
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid silver;
+}
+.stdItemTitle{
+	width: 80px;
+	height: 30px;
+	font-size: 15px;
+	line-height: 30px;
+	text-align: center;
+	border-right: 1px solid silver;
+	background-color: #56ED67;
+	color: #FFFFFF;
+	float: left;
+}
+.stdItemSno{
+	width: 143px;
+	height: 30px;
+	font-size: 15px;
+	line-height: 30px;
+	text-align: center;
+	border-right: 1px solid silver;
+	float: left;
+}
+.stdItemAdd{
+	width: 38px;
+	height: 30px;
+	background: #AD9BF7;
+	transition: background-color 0.3s ease;
+	text-align: center;
+	line-height: 26px;
+	font-size: 26px;
+	color: #FFFFFF;
+	float: left;
+}
+.stdItemAdd:hover{
+	background-color: #6B77FF;
+}
+.stdItemAdd:active{
+	background-color: #3A2BFD;
+}
+.stdlistbtnClose{
+	margin-left: 10px;
+	width: 280px;
+	height: 48px;
+	border: 1px solid #FF0004;
+	font-size: 30px;
+	color: #FFFFFF;
+	text-align:center;
+	line-height: 48px;
+	float: left;
+	background-color: #FF0004;
+	transition: background-color 0.3s ease;
+	cursor: pointer;
+}
+.stdlistbtnClose:hover{
+	border: 1px solid #DF1417;
+	background-color: #DF1417;
+}
+.stdlistbtnClose:active{
+	border: 1px solid #AD3335;
+	background-color: #AD3335;
+}
+
+
+/*animation*/
+ @-webkit-keyframes showList {
+	 0% {
+	 transform: scale(0.7);
+	 -webkit-transform: scale(0.7);
+	}
+	 45% {
+	 transform: scale(1.05);
+	 -webkit-transform: scale(1.05);
+	}
+	 80% {
+	 transform: scale(0.95);
+	 -webkit-tranform: scale(0.95);
+	}
+	 100% {
+	 transform: scale(1);
+	 -webkit-transform: scale(1);
+	}
+}
+@-moz-keyframes showList {
+	 0% {
+	 transform: scale(0.7);
+	 -webkit-transform: scale(0.7);
+	}
+	 45% {
+	 transform: scale(1.05);
+	 -webkit-transform: scale(1.05);
+	}
+	 80% {
+	 transform: scale(0.95);
+	 -webkit-tranform: scale(0.95);
+	}
+	 100% {
+	 transform: scale(1);
+	 -webkit-transform: scale(1);
+	}
+}
+@keyframes showList {
+	 0% {
+	 transform: scale(0.7);
+	 -webkit-transform: scale(0.7);
+	}
+	 45% {
+	 transform: scale(1.05);
+	 -webkit-transform: scale(1.05);
+	}
+	 80% {
+	 transform: scale(0.95);
+	 -webkit-tranform: scale(0.95);
+	}
+	 100% {
+	 transform: scale(1);
+	 -webkit-transform: scale(1);
+	}
+}
+
+@-webkit-keyframes hideList {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1); }
+  100% {
+    transform: scale(0.1);
+    -webkit-transform: scale(0.1); } }
+@-moz-keyframes hideList {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1); }
+  100% {
+    transform: scale(0.1);
+    -webkit-transform: scale(0.1); } }
+@keyframes hideList {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1); }
+  100% {
+    transform: scale(0.1);
+    -webkit-transform: scale(0.1); } }
+
+.show{
+	-webkit-animation: showList 0.3s;
+	-moz-animation: showList 0.3s;
+	animation: showList 0.3s;
+}
+
+.hide{
+	-webkit-animation: hideList 0.3s;
+	-moz-animation: hideList 0.3s;
+	animation: hideList 0.3s;
+}

@@ -1,0 +1,118 @@
+/**/
+#bodyWarp{
+	width:100%;
+	margin:10px auto;
+	box-shadow:0 1px 1px 1px #828282;
+	border-radius:3px;
+	float:left;
+	background-color: #FFFFFF;
+}
+
+#pTitle{
+	padding: 15px 0;
+	font-size:25px;
+	font-weight:bold;
+	text-align: center;
+}
+
+.tableWarp{
+	width: 100%;
+	padding: 50px 0 50px 0;
+}
+
+.tableWarp form{
+	width: 300px;
+	margin: 0 auto;
+}
+
+.tableWarp form table{
+	font-size: 20px;
+	color: #4D5357;
+}
+
+.tableWarp form table td{
+	line-height:40px;
+}
+
+.inputType{
+	width: 180px;
+	padding: 0 5px;
+	line-height: 30px;
+	font-size: medium;
+	color: #4D5357;
+	border: 1px solid #C5C5C5;
+}
+/*自我介绍文本框*/
+.inputTypeA{
+	min-height: 100px;
+	max-height: 100px;
+	min-width: 360px;
+	max-width: 360px;
+	padding: 5px 5px;
+	line-height: 30px;
+	font-size: 13px;
+	color: #4D5357;
+	border: 1px solid #C5C5C5;
+}
+
+.imgWarp{
+	padding: 20px 0;
+	float: left;
+	width: 200px;
+	height: 300px;
+}
+
+.imgWarp img{
+	width: 200px;
+	height: 200px;
+}
+
+.imgWarp span{
+	display: block;
+	margin-top: 10px;
+	padding: 5px 70px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #DBFFFE;
+	background-color: #838CFB;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.imgWarp span:hover{
+	background-color: #6267DB;
+}
+
+.imgWarp span:active{
+	background-color: #3436A5;
+}
+
+.btnWarp{
+	width: 100%;
+	float: left;
+	padding: 10px 480px;
+	margin-bottom: 200px;
+}
+
+.btnWarp span{
+	text-align: center;
+	display: block;
+	width: 100px;
+	margin: 0 10px;
+	line-height: 40px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #DBFFFE;
+	background-color: #838CFB;
+	border-radius: 5px;
+	cursor: pointer;
+	float: left;
+}
+
+.btnWarp span:hover{
+	background-color: #6267DB;
+}
+
+.btnWarp span:active{
+	background-color: #3436A5;
+}

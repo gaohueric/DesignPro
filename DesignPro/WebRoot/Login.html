@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<link href="pageCSS/overallstyle.css" type="text/css" rel="stylesheet"/>
+	<link href="pageCSS/pagelogin.css" type="text/css" rel="stylesheet"/>
+	<script type="text/javascript" src="pageJS/library/jquery.js"></script>
+	<script type="text/javascript" src="pageJS/funcJS/loginFunc.js"></script>
+	<script type="text/javascript" src="pageJS/library/sweet-alert.js"></script>
+	<link href="pageCSS/sweet-alert.css" type="text/css" rel="stylesheet"/>
+	
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<title>登陆系统</title>
+</head>
+<body>
+	<div class="bar">
+		<div class="barContentBox">
+			<img class="logo" src="image/logo/logo.png" alt=""/>
+			<a href="http://www.imau.edu.cn"><object class="logotext">内蒙古农业大学<br/>imau.edu.cn</object></a>
+		</div>
+	</div>
+	<div id="mainBox">
+		<div id="bodyBox">
+			<div id="bodyBoxLeft"><img src="http://www.cc100.org/upload/article/201152714122823.png" alt="" width=800px height=600px /></div>
+			<div id="bodyBoxRight">
+				<div id="loginBox">
+					<div id="modechoice">
+						<span class="stdtitle titleAllHas" onclick="setStudentStatus()">学生</span>
+						<span class="teatitle titleAllHas" onclick="setLecturerStatus()">导师</span>
+						<span class="admintitle titleAllHas" onclick="setAdminStatus()">管理员</span>
+					</div>
+					<div style="margin-top:20px;float: left; width: 100%; color: #656E73; font-weight: bold; text-align:center;">
+						<table class="loginTable" cellspacing="10">
+							<tr><td><input id="account" type="text" value="请输入账号" onfocus="accfocus(this)" onblur="accblur(this)"/></td></tr>
+							<tr><td><input id="passwd" type="password" /></td></tr>
+						</table>
+					</div>
+					<div class="lrwarp">
+						<span class="btnLogin" onclick="login()">登陆</span>
+						<span class="btnRegist" onclick="regist()">注册</span>
+					</div>
+					<div class="forgetPass" onclick="forgetPass()">忘记密码</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bar">
+		<div class="barContentBox">
+			<img class="logo" src="image/logo/logo.png" alt=""/>
+			<div class="logotext">内蒙古农业大学<br/>imau.edu.cn</div>
+			<div id="info">联系地址：内蒙古呼和浩特市赛罕区昭乌达路306号 邮编：010018<br/>
+			版权所有 © 2014-2015 内蒙古农业大学计算机与信息工程学院</div>
+		</div>
+	</div>
+</body>
+</html>

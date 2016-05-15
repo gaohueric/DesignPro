@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name></display-name>
+	<servlet>
+		<description>UserLogin</description>
+		<display-name>Login</display-name>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.design.imau.view.action.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>RegServlet</description>
+		<display-name>RegServlet</display-name>
+		<servlet-name>RegServlet</servlet-name>
+		<servlet-class>com.design.imau.view.action.RegServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>Get the stdMain page's design list</description>
+		<display-name>DesList</display-name>
+		<servlet-name>DesList</servlet-name>
+		<servlet-class>com.design.imau.view.action.DesList</servlet-class>
+	</servlet>
+	<servlet>
+		<description>Show the design detail</description>
+		<display-name>DesignDetail</display-name>
+		<servlet-name>DesignDetail</servlet-name>
+		<servlet-class>com.design.imau.view.action.DesignDetail</servlet-class>
+	</servlet>
+	<servlet>
+		<description>Student self info</description>
+		<display-name>StdSelf</display-name>
+		<servlet-name>StdSelf</servlet-name>
+		<servlet-class>com.design.imau.view.action.StdSelf</servlet-class>
+	</servlet>
+	<servlet>
+		<description>Update std and tea Info</description>
+		<display-name>UpdateInfo</display-name>
+		<servlet-name>UpdateInfo</servlet-name>
+		<servlet-class>com.design.imau.view.action.UpdateInfo</servlet-class>
+	</servlet>
+	<servlet>
+		<description>Show teacher's List</description>
+		<display-name>TeaList</display-name>
+		<servlet-name>TeaList</servlet-name>
+		<servlet-class>com.design.imau.view.action.TeaList</servlet-class>
+	</servlet>
+	<servlet>
+		<description>Show student's List</description>
+		<display-name>StdList</display-name>
+		<servlet-name>StdList</servlet-name>
+		<servlet-class>com.design.imau.view.action.StdList</servlet-class>
+	</servlet>
+	<servlet>
+		<description>Show teacher self</description>
+		<display-name>TeaSelf</display-name>
+		<servlet-name>TeaSelf</servlet-name>
+		<servlet-class>com.design.imau.view.action.TeaSelf</servlet-class>
+	</servlet>
+	<servlet>
+		<description>Get the info </description>
+		<display-name>SessionInfo</display-name>
+		<servlet-name>SessionInfo</servlet-name>
+		<servlet-class>com.design.imau.view.action.SessionInfo</servlet-class>
+	</servlet>
+	<servlet>
+		<description>HeadUpload</description>
+		<display-name>HeadUpload</display-name>
+		<servlet-name>HeadUpload</servlet-name>
+		<servlet-class>com.design.imau.view.action.HeadUpload</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ImgUpload</servlet-name>
+		<servlet-class>com.design.imau.view.action.ImgUpload</servlet-class>
+	</servlet>
+	<servlet>
+		<description>User choice operations</description>
+		<display-name>ChoiceOperation</display-name>
+		<servlet-name>ChoiceOperation</servlet-name>
+		<servlet-class>com.design.imau.view.action.ChoiceOperation</servlet-class>
+	</servlet>
+	<servlet>
+		<description>Store some numbers of operation</description>
+		<display-name>StoreNums</display-name>
+		<servlet-name>SessionTNO</servlet-name>
+		<servlet-class>com.design.imau.view.action.SessionTNO</servlet-class>
+	</servlet>
+	<servlet>
+		<description>Student get the detail of teacher</description>
+		<display-name>StdSTinfo</display-name>
+		<servlet-name>StdSTinfo</servlet-name>
+		<servlet-class>com.design.imau.view.action.StdSTinfo</servlet-class>
+	</servlet>
+	<servlet>
+		<description>Get teacher's designs</description>
+		<display-name>TeaMyDeses</display-name>
+		<servlet-name>TeaMyDeses</servlet-name>
+		<servlet-class>com.design.imau.view.action.TeaMyDeses</servlet-class>
+	</servlet>
+	<servlet>
+		<description>Teacher set design</description>
+		<display-name>TeaSetDeses</display-name>
+		<servlet-name>TeaSetDeses</servlet-name>
+		<servlet-class>com.design.imau.view.action.TeaSetDeses</servlet-class>
+	</servlet>
+	<servlet>
+		<description>Get teacher's student'name and design</description>
+		<display-name>TeaSetDeses</display-name>
+		<servlet-name>TeaStdWithDes</servlet-name>
+		<servlet-class>com.design.imau.view.action.TeaStdWithDes</servlet-class>
+	</servlet>
+	<servlet>
+		<description>Get teacher's design title and it's id</description>
+		<display-name>TeaSelfDesTitle</display-name>
+		<servlet-name>TeaSelfDesTitle</servlet-name>
+		<servlet-class>com.design.imau.view.action.TeaSelfDesTitle</servlet-class>
+	</servlet>
+	<servlet>
+		<description>Teacher select student</description>
+		<display-name>TeaSelectStd</display-name>
+		<servlet-name>TeaSelectStd</servlet-name>
+		<servlet-class>com.design.imau.view.action.TeaSelectStd</servlet-class>
+	</servlet>
+	<servlet>
+		<description>Teacher get student's name and sno list</description>
+		<display-name>TeaStdNameSno</display-name>
+		<servlet-name>TeaStdNameSno</servlet-name>
+		<servlet-class>com.design.imau.view.action.TeaStdNameSno</servlet-class>
+	</servlet>
+	<servlet>
+		<description>Base information</description>
+		<display-name>BaseInfo</display-name>
+		<servlet-name>BaseInfo</servlet-name>
+		<servlet-class>com.design.imau.view.action.BaseInfo</servlet-class>
+	</servlet>
+	<servlet>
+		<description>Change the password</description>
+		<display-name>ChangePass</display-name>
+		<servlet-name>ChangePass</servlet-name>
+		<servlet-class>com.design.imau.view.action.ChangePass</servlet-class>
+	</servlet>
+	<servlet>
+		<description>Student select design and teacher</description>
+		<display-name>StdSelects</display-name>
+		<servlet-name>StdSelects</servlet-name>
+		<servlet-class>com.design.imau.view.action.StdSelects</servlet-class>
+	</servlet>
+	<servlet>
+		<description>Student get teacher's name and id</description>
+		<display-name>StdTeaNN</display-name>
+		<servlet-name>StdTeaNN</servlet-name>
+		<servlet-class>com.design.imau.view.action.StdTeaNN</servlet-class>
+	</servlet>
+	<servlet>
+		<description>Regist check info</description>
+		<display-name>RegCheckServlet</display-name>
+		<servlet-name>RegCheckServlet</servlet-name>
+		<servlet-class>com.design.imau.view.action.RegCheckServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>ListInfoServlet</description>
+		<display-name>ListInfoServlet</display-name>
+		<servlet-name>ListInfoServlet</servlet-name>
+		<servlet-class>com.design.monitor.imau.action.ListInfoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>SingleInfoServlet</description>
+		<display-name>SingleInfoServlet</display-name>
+		<servlet-name>SingleInfoServlet</servlet-name>
+		<servlet-class>com.design.monitor.imau.action.SingleInfoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>action</description>
+		<display-name>AppLoginServlet</display-name>
+		<servlet-name>AppLoginServlet</servlet-name>
+		<servlet-class>com.design.monitor.imau.action.AppLoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>LoginConfirmServlet</description>
+		<display-name>LoginConfirmServlet</display-name>
+		<servlet-name>LoginConfirmServlet</servlet-name>
+		<servlet-class>com.design.monitor.imau.action.LoginConfirmServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>FileUploadServlet</description>
+		<display-name>FileUploadServlet</display-name>
+		<servlet-name>FileUploadServlet</servlet-name>
+		<servlet-class>com.design.monitor.imau.action.FileUploadServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>StdFileUpLoadServlet</description>
+		<display-name>StdFileUpLoadServlet</display-name>
+		<servlet-name>StdFileUpLoadServlet</servlet-name>
+		<servlet-class>com.design.monitor.imau.action.StdFileUpLoadServlet</servlet-class>
+	</servlet>
+  <servlet>
+    <description>GetFileServlet</description>
+    <display-name>GetFileServlet</display-name>
+    <servlet-name>GetFileServlet</servlet-name>
+    <servlet-class>com.design.monitor.imau.action.GetFileServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>TeaStdNums</description>
+    <display-name>TeaStdNums</display-name>
+    <servlet-name>TeaStdNums</servlet-name>
+    <servlet-class>com.design.monitor.imau.action.TeaStdNums</servlet-class>
+  </servlet>
+  <servlet>
+    <description>TeaSetServlet</description>
+    <display-name>TeaSetServlet</display-name>
+    <servlet-name>TeaSetServlet</servlet-name>
+    <servlet-class>com.design.monitor.imau.action.TeaSetServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/servlet/LoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RegServlet</servlet-name>
+		<url-pattern>/servlet/RegServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DesList</servlet-name>
+		<url-pattern>/servlet/DesList</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DesignDetail</servlet-name>
+		<url-pattern>/servlet/DesignDetail</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StdSelf</servlet-name>
+		<url-pattern>/servlet/StdSelf</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateInfo</servlet-name>
+		<url-pattern>/servlet/UpdateInfo</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TeaList</servlet-name>
+		<url-pattern>/servlet/TeaList</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StdList</servlet-name>
+		<url-pattern>/servlet/StdList</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TeaSelf</servlet-name>
+		<url-pattern>/servlet/TeaSelf</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SessionInfo</servlet-name>
+		<url-pattern>/servlet/SessionInfo</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HeadUpload</servlet-name>
+		<url-pattern>/servlet/HeadUpload</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ImgUpload</servlet-name>
+		<url-pattern>/imgUpload.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ChoiceOperation</servlet-name>
+		<url-pattern>/servlet/ChoiceOperation</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SessionTNO</servlet-name>
+		<url-pattern>/servlet/SessionTNO</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StdSTinfo</servlet-name>
+		<url-pattern>/servlet/StdSTinfo</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TeaMyDeses</servlet-name>
+		<url-pattern>/servlet/TeaMyDeses</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TeaSetDeses</servlet-name>
+		<url-pattern>/servlet/TeaSetDeses</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TeaStdWithDes</servlet-name>
+		<url-pattern>/servlet/TeaStdWithDes</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TeaSelfDesTitle</servlet-name>
+		<url-pattern>/servlet/TeaSelfDesTitle</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TeaSelectStd</servlet-name>
+		<url-pattern>/servlet/TeaSelectStd</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TeaStdNameSno</servlet-name>
+		<url-pattern>/servlet/TeaStdNameSno</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BaseInfo</servlet-name>
+		<url-pattern>/servlet/BaseInfo</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ChangePass</servlet-name>
+		<url-pattern>/servlet/ChangePass</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StdSelects</servlet-name>
+		<url-pattern>/servlet/StdSelects</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StdTeaNN</servlet-name>
+		<url-pattern>/servlet/StdTeaNN</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RegCheckServlet</servlet-name>
+		<url-pattern>/servlet/RegCheckServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ListInfoServlet</servlet-name>
+		<url-pattern>/ListInfoServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SingleInfoServlet</servlet-name>
+		<url-pattern>/SingleInfoServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AppLoginServlet</servlet-name>
+		<url-pattern>/AppLoginServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginConfirmServlet</servlet-name>
+		<url-pattern>/LoginConfirmServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FileUploadServlet</servlet-name>
+		<url-pattern>/FileUploadServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StdFileUpLoadServlet</servlet-name>
+		<url-pattern>/StdFileUpLoadServlet.do</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetFileServlet</servlet-name>
+    <url-pattern>/GetFileServlet.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TeaStdNums</servlet-name>
+    <url-pattern>/TeaStdNums.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TeaSetServlet</servlet-name>
+    <url-pattern>/TeaSetServlet.do</url-pattern>
+  </servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>Login.html</welcome-file>
+	</welcome-file-list>
+</web-app>

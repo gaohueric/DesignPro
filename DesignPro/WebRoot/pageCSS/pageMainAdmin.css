@@ -1,0 +1,193 @@
+/* CSS Document */
+#bodyWarp{
+	width:100%;
+	margin:10px auto;
+	box-shadow:0 1px 1px 1px #828282;
+	border-radius:3px;
+	float:left;
+}
+/*个人菜单*/
+.pernav-warp{
+	padding: 0;
+	margin: 0 20px;
+	float: right; 
+}
+
+.pernav-warp ul{
+	list-style: none;
+}
+
+.pernav-warp ul li{
+	color: #F9F9F9;
+	font-size: 15px;
+	line-height: 60px;
+	float: left;
+	position: relative;
+}
+
+.pernav-warp ul li:hover{
+	text-shadow: 0 2px 1px #000000;
+	background-color: #363D40;
+}
+
+.pernav-warp ul li:hover ul{
+	display: block;
+}
+
+.pernav-warp ul li ul{
+	display: none;
+	position: absolute;
+	top: 60px; 
+	right: 0px;
+}
+
+.pernav-warp ul li ul li{
+	width: 100px;
+	text-align: center;
+	background-color: #363D40;
+	box-shadow: 0 0px 1px 0px #828282;
+}
+
+.pernav-warp ul li ul li:hover{
+	background-color: #2A2C2E;
+}
+
+.pernav-warp ul li ul li span{
+	padding: 0 20px;
+	line-height:35px;
+	display: block;
+}
+
+.pernav-warp ul li ul li a{
+	padding: 0 20px;
+	color: #F9F9F9;
+	text-decoration: none;
+	line-height:35px;
+	display: block;
+}
+
+/*管理才单*/
+.listnav-warp{
+	padding:0;
+	margin:0 50px;
+	float:left;
+}
+
+.listnav ul{
+	list-style:none;
+}
+
+.listnav ul li{
+	width:160px;
+	line-height:60px;
+	float:left;
+	position: relative;
+}
+
+.listnav ul li span{
+	display:block;
+	padding:0 40px;
+	font-size:20px;
+	color:#F9F9F9;
+}
+
+.listnav ul ul{
+	display: none;
+	position: absolute;
+	top: 60px;
+	left: 0px;
+}
+
+.listnav ul ul li{
+	width: 100px;
+	background-color: #363D40;
+	position: relative;
+}
+
+.listnav ul ul li span{
+	font-size: 15px;
+	padding: 0 20px;
+	line-height:40px;
+	display: block;
+}
+
+.listnav ul ul li a{
+	color: #F9F9F9;
+	text-decoration: none;
+	font-size: 15px;
+	padding: 0 20px;
+	line-height:40px;
+	display: block;
+}
+	
+.listnav ul ul ul{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 100px;
+}
+
+.listnav ul ul ul li{
+	background-color: #2A2C2E;
+	position: relative;
+}
+
+.listnav ul ul ul a{
+	display: block;
+	color: #F1F1F1;
+	text-decoration:none;
+	font-size: 15px;
+	padding: 0 20px;
+	line-height:40px;
+}
+
+.listnav ul ul ul ul{
+	display: none;
+}
+
+.listnav ul ul ul ul li{
+	background-color: #363D40;
+}
+
+.listnav ul li:hover{
+	background-color: #363D40;
+	text-shadow: 0 2px 1px #000000;
+	box-shadow: 0 0px 1px 0px #828282;
+}
+
+.listnav ul li:hover ul{
+	display: block;
+}
+
+.listnav ul li:hover ul li{
+	box-shadow: 0 0px 1px 0px #828282;
+}
+
+.listnav ul li:hover ul ul{
+	display: none;
+}
+
+.listnav ul ul li:hover{
+	background-color: #2A2C2E;
+}
+
+.listnav ul ul li:hover ul{
+
+	display: block;
+}
+
+.listnav ul ul li:hover ul ul{
+	display: none;
+}
+
+.listnav ul ul ul li:hover{
+	background-color: #363D40;
+}
+
+.listnav ul ul ul li:hover ul{
+	display: block;
+}
+
+.listnav ul ul ul ul li:hover{
+	background-color: #2A2C2E;
+}

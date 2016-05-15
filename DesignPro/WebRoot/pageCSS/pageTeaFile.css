@@ -1,0 +1,433 @@
+/* CSS Document */
+#bodyWarp{
+	width:100%;
+	margin:10px auto;
+	box-shadow:0 1px 1px 1px #828282;
+	border-radius:3px;
+	background-color: #FFFFFF;
+	float:left;
+}
+
+.pernav-warp{
+	padding: 0;
+	margin: 0 20px;
+	float: right;
+}
+
+.pernav-warp ul{
+	list-style: none;
+}
+
+.pernav-warp ul li{
+	color: #F9F9F9;
+	font-size: 15px;
+	line-height: 60px;
+	float: left;
+	position: relative;
+}
+
+.pernav-warp ul li img{
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+	border-radius:10px;
+}
+
+.pernav-warp ul li:hover{
+	text-shadow: 0 2px 1px #000000;
+	background-color: #363D40;
+}
+
+.pernav-warp ul li:hover ul{
+	display: block;
+}
+
+.pernav-warp ul li ul{
+	display: none;
+	position: absolute;
+	top: 60px; 
+	right: 0px;
+}
+
+.pernav-warp ul li ul li{
+	width: 100px;
+	text-align: center;
+	background-color: #363D40;
+	box-shadow: 0 0px 1px 0px #828282;
+}
+
+.pernav-warp ul li ul li:hover{
+	background-color: #2A2C2E;
+}
+
+.pernav-warp ul li ul li span{
+	padding: 0 20px;
+	line-height:35px;
+	display: block;
+}
+
+.pernav-warp ul li ul li a{
+	padding: 0 20px;
+	color: #F9F9F9;
+	text-decoration: none;
+	line-height:35px;
+	display: block;
+}
+
+.listnav-warp{
+	padding:0;
+	margin:0 50px;
+	float:left;
+}
+
+.listnav ul{
+	list-style:none;
+	z-index: 100;	
+}
+
+.listnav ul li{
+	width:160px;
+	line-height:60px;
+	float:left;
+	position: relative;
+}
+
+.listnav ul li span{
+	display:block;
+	padding:0 40px;
+	font-size:20px;
+	color:#F9F9F9;
+}
+
+.listnav ul ul{
+	display: none;
+	position: absolute;
+	top: 60px;
+	left: 0px;
+}
+
+.listnav ul ul li{
+	width: 100px;
+	background-color: #363D40;
+	position: relative;
+}
+
+.listnav ul ul li span{
+	font-size: 15px;
+	padding: 0 20px;
+	line-height:40px;
+	display: block;
+}
+
+.listnav ul ul li a{
+	color: #F9F9F9;
+	text-decoration: none;
+	font-size: 15px;
+	padding: 0 20px;
+	line-height:40px;
+	display: block;
+}
+	
+.listnav ul ul ul{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 100px;
+}
+
+.listnav ul ul ul li{
+	background-color: #2A2C2E;
+	position: relative;
+}
+
+.listnav ul ul ul a{
+	display: block;
+	color: #F1F1F1;
+	text-decoration:none;
+	font-size: 15px;
+	padding: 0 20px;
+	line-height:40px;
+}
+
+.listnav ul ul ul ul{
+	display: none;
+}
+
+.listnav ul ul ul ul li{
+	background-color: #363D40;
+}
+
+.listnav ul li:hover{
+	background-color: #363D40;
+	text-shadow: 0 2px 1px #000000;
+	box-shadow: 0 0px 1px 0px #828282;
+}
+
+.listnav ul li:hover ul{
+	display: block;
+}
+
+.listnav ul li:hover ul li{
+	box-shadow: 0 0px 1px 0px #828282;
+}
+
+.listnav ul li:hover ul ul{
+	display: none;
+}
+
+.listnav ul ul li:hover{
+	background-color: #2A2C2E;
+}
+
+.listnav ul ul li:hover ul{
+
+	display: block;
+}
+
+.listnav ul ul li:hover ul ul{
+	display: none;
+}
+
+.listnav ul ul ul li:hover{
+	background-color: #363D40;
+}
+
+.listnav ul ul ul li:hover ul{
+	display: block;
+}
+
+.listnav ul ul ul ul li:hover{
+	background-color: #2A2C2E;
+}
+
+/*个人信息简要*/
+#infoSimpleWarp{
+	margin: 10px 50px 10px 10px;
+	width: 200px;
+	height: 400px;
+	float: right;
+	border: 1px solid silver;
+	box-shadow:0 1px 1px 1px #828282;
+}
+
+#infoSimpleWarp img{
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+#isw-name{
+	width: 150px;
+	display: block;
+	margin: 30px 20px 20px 20px;
+	float: left;
+	font-size: 20px;
+}
+
+#isw-pos{
+	width: 150px;
+	display: block;
+	margin: 0px 20px 30px 20px;
+	float: left;
+	font-size: 15px;
+}
+
+/*内容*/
+#winBox{
+/*	border: 1px solid silver;*/
+	width: 800px;
+	min-height: 600px;
+	margin: 10px 0 10px 70px;
+	padding-bottom: 10px;
+	float: left;
+}
+
+#winBox ul{
+	margin: 0 0 0 20px;
+	list-style: none;
+	float: left;
+}
+
+#winBox ul li{
+	width: 35px;
+	height: 100px;
+	background-color: #666666;
+	margin-bottom: 1px;
+	text-align: center;
+	font-size: 20px;
+	color:rgba(251,251,251,1.00);
+	padding-top: 15px;
+	cursor: pointer;
+	line-height: 20px;
+	transition: background-color ease 0.5s;
+}
+
+#winBox ul li:hover{
+	background-color: #353535;
+}
+
+.thesisWarp{
+	float: left;
+	width: 700px;
+	min-height: 550px;
+	border: 1px solid silver;
+	z-index: -1000;
+}
+
+.file-warp{
+	/*border: 1px solid silver;*/
+	width: 500px;
+	height: 35px;
+	float: left;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.addFile{
+	top: 0px;
+	left: 300px;
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 20px;
+	text-align: center;
+	color: #FFFFFF;
+	border-radius: 0 5px 5px 0;
+	font-weight:bold;
+	background-color: #6C5CF9;
+	position: absolute;
+	cursor: pointer;
+}
+
+.file{
+	left: 300px;
+	width: 100px;
+	outline: none; 
+	height: 35px; 
+	position: absolute;
+	opacity: 0; 
+}
+
+.filename{
+	top: 0px;
+	left: 0px;
+	border: 1px solid silver ;
+	background-color: #F4F4F4;
+	border-radius: 5px 0 0 5px;
+	font-size: 16px;
+	line-height: 33px;
+	padding: 0 5px 0 5px;
+	overflow: hidden;
+	width: 300px;
+	height: 33px;
+	position: absolute;
+}
+
+.filemore{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 7px;
+	left: 405px;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 18px;
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #786FE8;
+	transition: background-color ease 0.5s;
+	cursor: pointer;
+}
+
+.filemore:hover{
+	background-color: #5A4FBF;
+}
+
+.filemore:active{
+	background-color: #030B9E;
+}
+
+.filenomore{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 7px;
+	left: 430px;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 25px;
+	line-height: 17px;
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #FF0707;
+	transition: background-color ease 0.5s;
+	cursor: pointer;
+}
+
+.filenomore:hover{
+	background-color: #B80404;
+}
+
+.filenomore:active{
+	background-color: #880000;
+}
+
+.btn_submit{
+	margin-left: 150px;
+	font-size: 20px;
+	font-weight:bold;
+	color: #FFFFFF;
+	background-color: #6C5CF9;
+	line-height: 35px;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	width: 100px;
+	height: 35px;
+	transition: background-color ease 0.5s;
+	float: left;
+	cursor: pointer;
+}
+
+.btn_submit:hover{
+	background-color: #5A4FBF;
+}
+
+.btn_submit:active{
+	background-color: #030B9E;
+}
+
+.file-table{
+	width: 600px;
+	margin-left: 50px;
+	background-color: #F4F4F4;
+	border-right: 1px solid silver;
+	border-bottom: 1px solid silver;
+}
+
+.file-table td{
+	height: 30px;
+	border-left:1px solid silver;
+	border-top:1px solid silver;
+}
+.materialwarp{
+	display: none;
+	float: left;
+	width: 700px;
+	min-height: 550px;
+	border: 1px solid silver;
+	z-index: -1000;
+}
+#aid{
+	color: #1400C1;
+	font-size: 14px;
+	text-decoration: none;
+}
+#aid:hover {
+	color: #86A339;
+	text-decoration: underline;
+}
+#aid:active {
+	color: #1400C1;
+}
